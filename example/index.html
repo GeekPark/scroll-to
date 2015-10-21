@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>example</title>
+  <style>
+    .test {
+      height: 500px;
+    }
+    .test:nth-child(2n) {
+      background-color: rgba(255,0,0,.5);
+    }
+    .test:nth-child(2n+1) {
+      background-color: rgba(255,255,0,.5);
+    }
+  </style>
+</head>
+<body>
+  <a href="javascript:;" data-target="#test1">测试1</a>
+  <a href="javascript:;" data-target="#test2">测试2</a>
+  <a href="javascript:;" data-target="#test3">测试3</a>
+  <a href="javascript:;" data-target="#test4">测试4</a>
+  <p id="test1" class="test"></p>
+  <p id="test2" class="test"></p>
+  <p id="test3" class="test"></p>
+  <p id="test4" class="test"></p>
+  <script src="/dist/bundle.min.js"></script>
+</body>
+</html>

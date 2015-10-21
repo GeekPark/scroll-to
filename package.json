@@ -1,0 +1,26 @@
+{
+  "name": "@geekpark/scroll-to",
+  "version": "1.0.0",
+  "description": "scroll to a dom or y position",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab_ssh.geekpark.net:geekpark/scroll-to.git"
+  },
+  "author": "Vanilla",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "path": "^0.12.7",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
