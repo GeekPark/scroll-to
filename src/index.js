@@ -1,6 +1,8 @@
-import $ from 'jquery';
+'use strict';
 
-let scroll = ({selector, offset, callback, posY, duration, easing, element}) => {
+var $ = require('jquery');
+
+var scroll = ({selector, offset, callback, posY, duration, easing, element}) => {
   $((element || 'html,body')).animate({
     scrollTop: parseInt(
       typeof posY !== 'undefined' ? posY : $(selector).offset().top
@@ -12,4 +14,4 @@ let scroll = ({selector, offset, callback, posY, duration, easing, element}) => 
   });
 }
 
-export default scroll;
+module.exports = scroll

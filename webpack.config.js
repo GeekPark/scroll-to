@@ -20,7 +20,7 @@ var config = {
   module: {
     noParse: [],
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ }
+      { test: /\.js$/, loader: 'babel-loader', exclude: [/node_modules/, /build/] }
     ]
   },
   plugin: [

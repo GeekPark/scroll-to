@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import scrollTo from '../index';
+import scrollTo from '../build/index';
 
 $('a[data-target]').on('click', function () {
   scrollTo({
