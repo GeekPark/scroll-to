@@ -26,7 +26,7 @@ scroll-to DOM or y position
 
 ```javascript
 import $ from 'jquery';
-import scrollTo from 'scroll-to';
+import scrollTo from '@geekpark/scroll-to';
 
 $('#scroll').on('click', function () {
   scrollTo({
