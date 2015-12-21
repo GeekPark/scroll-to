@@ -3,7 +3,7 @@
 var $ = require('jquery');
 
 var scroll = ({selector, offset, callback, posY, duration, easing, element}) => {
-  $((element || 'html,body')).animate({
+  (typeof element === 'object' ? element : $('html,body')).animate({
     scrollTop: parseInt(
       typeof posY !== 'undefined' ? posY : $(selector).offset().top
       - (offset || 0)

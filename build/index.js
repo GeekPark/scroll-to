@@ -11,7 +11,7 @@ var scroll = function scroll(_ref) {
   var easing = _ref.easing;
   var element = _ref.element;
 
-  $(element || 'html,body').animate({
+  (typeof element === 'object' ? element : $('html,body')).animate({
     scrollTop: parseInt(typeof posY !== 'undefined' ? posY : $(selector).offset().top - (offset || 0)) + 'px'
   }, typeof duration === 'undefined' ? 800 : duration, easing || 'swing').promise().done(function () {
     if (typeof callback === 'function') callback();

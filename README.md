@@ -7,7 +7,7 @@ scroll-to DOM or y position
 ### Usage
 `scrollTo({param: value})`
 
-* **selector/posY** *jQuery selector or a Y position value*
+* **selector/posY** *jQuery object or a Y position value*
 * callback *[null] function body or name*
 * offset *[0] number margin bootom to target*
 * duration *[800] animate duration*
@@ -35,3 +35,6 @@ $('#scroll').on('click', function () {
   });
 });
 ```
+
+### changelog
+* 1.1.0 change `params[element]` to a jquery object, not jquery selector. eg: `$('#container')`, not `#container`
