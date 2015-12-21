@@ -13,7 +13,7 @@ var scroll = function scroll(_ref) {
 
   $(element || 'html,body').animate({
     scrollTop: parseInt(typeof posY !== 'undefined' ? posY : $(selector).offset().top - (offset || 0)) + 'px'
-  }, duration || 800, easing || 'swing').promise().done(function () {
+  }, typeof duration === 'undefined' ? 800 : duration, easing || 'swing').promise().done(function () {
     if (typeof callback === 'function') callback();
   });
 };

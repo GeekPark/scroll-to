@@ -8,7 +8,7 @@ var scroll = ({selector, offset, callback, posY, duration, easing, element}) => 
       typeof posY !== 'undefined' ? posY : $(selector).offset().top
       - (offset || 0)
     ) + 'px'
-  }, duration || 800, easing || 'swing')
+  }, typeof duration === 'undefined' ? 800 : duration, easing || 'swing')
   .promise().done(() => {
     if(typeof callback === 'function') callback();
   });
