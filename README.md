@@ -36,5 +36,8 @@ $('#scroll').on('click', function () {
 });
 ```
 
-### changelog
+### Changelog
 * 1.1.0 change `params[element]` to a jquery object, not jquery selector. eg: `$('#container')`, not `#container`
+
+### What is gnpm ?
+`gnpm` was private npm registry for [GeekPark](http://www.geekpark.net), [read more](https://github.com/cnpm/cnpmjs.org)
