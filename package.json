@@ -1,6 +1,6 @@
 {
-  "name": "@geekpark/scroll-to",
-  "version": "1.1.0",
+  "name": "jquery-scroll",
+  "version": "1.1.1",
   "description": "scroll to a dom or y position",
   "main": "build/index.js",
   "scripts": {

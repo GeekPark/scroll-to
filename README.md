@@ -2,7 +2,7 @@ scroll-to DOM or y position
 ------
 ### Install
 
-`gnpm i @geekpark/scroll-to --save`
+`npm i jquery-scroll --save`
 
 ### Usage
 `scrollTo({param: value})`
@@ -26,7 +26,7 @@ scroll-to DOM or y position
 
 ```javascript
 import $ from 'jquery';
-import scrollTo from '@geekpark/scroll-to';
+import scrollTo from 'jquery-scroll';
 
 $('#scroll').on('click', function () {
   scrollTo({
